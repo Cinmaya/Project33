@@ -5,7 +5,7 @@ const Bodies = Matter.Bodies;
 const Events = Matter.Events;
 
 var engine,world;
-var particles;
+var particles=[];
 var plinkos = [];
 var divisions=[];
 var particle;
@@ -80,7 +80,7 @@ function draw() {
   if(gameState=="end"){
     textSize(100);
     fill("red")
-    text("GAMEOVER",400,400);
+    text("GAMEOVER",100,400);
   }
 
    for (var i = 0; i < plinkos.length; i++) {
